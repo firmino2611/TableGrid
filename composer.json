@@ -14,7 +14,6 @@
             "Firmino\\TableGrid\\": "./"
         }
     },
-    "minimum-stability": "dev",
     "require": {},
     "extra": {
         "providers": [
