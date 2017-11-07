@@ -63,8 +63,13 @@ class Table
 			return $this->model;
 		}
 
-		$this->model = !is_object($model) ? new $model : $model;
-		$this->modelOriginal = $this->model;
+		if (is_array($model)) {
+			$this->model = $model;
+		}else{
+			$this->model = !is_object($model) ? new $model : $model;
+			$this->modelOriginal = $this->model;
+		}
+		
 		return $this;
 	}
 
@@ -175,10 +180,15 @@ class Table
 	*	@return Table
 	*/
 	public function search(){
-		$keyName = $this->modelOriginal->getKeyName();
-		$columns = collect($this->columns())->pluck('name')->toArray();
-		array_unshift($columns, $keyName);
-		$this->rows = $this->getRelations($this->model); 
+		if (is_array($this->model)) {
+			$this->rows = $this->model;
+		}else{
+			$keyName = $this->modelOriginal->getKeyName();
+			$columns = collect($this->columns())->pluck('name')->toArray();
+			array_unshift($columns, $keyName);
+			$this->rows = $this->getRelations($this->model); 
+		}
+		
 		return $this;
 	}
 
