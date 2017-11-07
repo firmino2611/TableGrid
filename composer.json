@@ -22,5 +22,6 @@
         "aliases": {
             "TableGrid": "Firmino\\TableGrid\\Facades\\TableGrid"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
