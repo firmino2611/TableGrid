@@ -52,7 +52,7 @@ public function index(){
 
 Para renderizar a tabela basta chamar o metodo ´render()´ da seguinte forma no html:
 
-´{!! $table->render() !!}`
+`{!! $table->render() !!}`
 
 #### Metódos
 
