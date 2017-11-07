@@ -64,6 +64,7 @@ class Table
 		}
 
 		if (is_array($model)) {
+			dd($model);
 			$this->model = $model;
 		}else{
 			$this->model = !is_object($model) ? new $model : $model;
@@ -180,14 +181,14 @@ class Table
 	*	@return Table
 	*/
 	public function search(){
-		if (is_array($this->model)) {
+		// if (is_array($this->model)) {
 			$this->rows = $this->model;
-		}else{
-			$keyName = $this->modelOriginal->getKeyName();
-			$columns = collect($this->columns())->pluck('name')->toArray();
-			array_unshift($columns, $keyName);
-			$this->rows = $this->getRelations($this->model); 
-		}
+		// }else{
+		// 	$keyName = $this->modelOriginal->getKeyName();
+		// 	$columns = collect($this->columns())->pluck('name')->toArray();
+		// 	array_unshift($columns, $keyName);
+		// 	$this->rows = $this->getRelations($this->model); 
+		// }
 		
 		return $this;
 	}
