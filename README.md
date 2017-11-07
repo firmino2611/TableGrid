@@ -105,7 +105,7 @@ Recupera as ações que foram adicionadas na tabela
 
 ---
 
-##### `addAction(string $label, string $route, string $template, string $class = 'default')`
+##### `addAction(string $label, string $route, string $template, string $class = 'btn btn-default btn-sm')`
 Adiciona uma ação para ser exibida na tabela. 
 - $label => Texto que aparece no link.
 - $route => Nome da rota que será redirecionado ao clicar no link.
@@ -114,7 +114,7 @@ Adiciona uma ação para ser exibida na tabela.
 
 ---
 
-##### `addEditAction(string $label, string $route, string $template, string $class = 'primary')`
+##### `addEditAction(string $label, string $route, string $template, string $class = 'btn btn-primary btn-sm')`
 Adiciona uma ação de edição para ser exibida na tabela. 
 - $label => Texto que aparece no link.
 - $route => Nome da rota que será redirecionado ao clicar no link.
