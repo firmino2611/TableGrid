@@ -1,0 +1,27 @@
+{
+    "name": "firmino/tablegrid",
+    "description": "Estrutura de grid reaproveitável, para ser usada em vários lugares da aplicação.",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Firmino",
+            "email": "lucasfirmino_dev@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Firmino\\TableGrid\\": "./"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "providers": [
+            "Firmino\\TableGrid\\Providers\\TableGridServiceProvider"
+        ],
+        "aliases": {
+            "TableGrid": "Firmino\\TableGrid\\Facades\\TableGrid"
+        }
+    }
+}
