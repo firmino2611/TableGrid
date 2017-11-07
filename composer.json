@@ -15,13 +15,5 @@
         }
     },
     "require": {},
-    "extra": {
-        "providers": [
-            "Firmino\\TableGrid\\Providers\\TableGridServiceProvider"
-        ],
-        "aliases": {
-            "TableGrid": "Firmino\\TableGrid\\Facades\\TableGrid"
-        }
-    },
     "minimum-stability": "dev"
 }
