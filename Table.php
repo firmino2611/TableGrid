@@ -122,7 +122,7 @@ class Table
 	*
 	*	@return Table
 	*/
-	public function addAction($label, $route, $template, $class){
+	public function addAction($label, $route, $template, $class = 'default'){
 		$this->actions[] = [
 				'label' => $label,
 				'route' => $route,
@@ -164,7 +164,7 @@ class Table
 	*
 	*	@return Table
 	*/
-	public function addDeleteAction($label, $route, $template, $class = 'default'){
+	public function addDeleteAction($label, $route, $template, $class = 'danger'){
 		$this->addAction($label, $route, $template,$class);
 		return $this;
 	}
@@ -187,7 +187,7 @@ class Table
 	*
 	*	@return Array
 	*/
-	public function getRelations($model){
+	private function getRelations($model){
 		return $model::with([])->get();
 	}
 }
