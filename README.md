@@ -150,6 +150,10 @@ O pacote possui 3 tamplates básicos para renderizar os links de ações, que po
 - Table::templates.action (Para ações adicionais)
 
 ## Configurações
+O arquivo de configurações permite fazer alguns ajustes no plugin DataTable.
+- translation_table (Permite que as informações da tabela sejam traduziadas para o portugues-br)
+- zero_records (Texto que é mostrado quando não são encontrados registro na tabela)
+- search (Texto que aparece ao lado da barra de pesquisa da tabela)
 
 
 ## Exemplos
