@@ -1,1 +1,1 @@
-<a class="btn btn-{{ $action['class'] }} btn-sm" href="{{ route($action['route'], $row->getKey()) }}"> {{ $action['label'] }} </a>
+<a class="{{ $action['class'] }}" href="{{ route($action['route'], $row->getKey()) }}"> {{ $action['label'] }} </a>

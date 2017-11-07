@@ -1,4 +1,4 @@
-<a class="btn btn-{{ $action['class'] }} btn-sm" href="{{ route($action['route'], $row->getKey()) }}" 
+<a class="{{ $action['class'] }} " href="{{ route($action['route'], $row->getKey()) }}" 
 onclick="
 			event.preventDefault();
 			if (confirm('Deseja excluir este item?')) {

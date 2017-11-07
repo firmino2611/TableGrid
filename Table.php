@@ -122,7 +122,7 @@ class Table
 	*
 	*	@return Table
 	*/
-	public function addAction($label, $route, $template, $class = 'default'){
+	public function addAction($label, $route, $template, $class = 'btn btn-default btn-sm'){
 		$this->actions[] = [
 				'label' => $label,
 				'route' => $route,
@@ -146,7 +146,7 @@ class Table
 	*
 	*	@return Table
 	*/
-	public function addEditAction($label, $route, $template, $class = 'default'){
+	public function addEditAction($label, $route, $template, $class = 'btn btn-default btn-sm'){
 		$this->addAction($label, $route, $template,$class);
 		return $this;
 	}
@@ -164,7 +164,7 @@ class Table
 	*
 	*	@return Table
 	*/
-	public function addDeleteAction($label, $route, $template, $class = 'danger'){
+	public function addDeleteAction($label, $route, $template, $class = 'btn btn-danger btn-sm'){
 		$this->addAction($label, $route, $template,$class);
 		return $this;
 	}
