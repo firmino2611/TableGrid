@@ -113,7 +113,7 @@ Adiciona uma ação para ser exibida na tabela.
 - $label => Texto que aparece no link.
 - $route => Nome da rota que será redirecionado ao clicar no link.
 - $template => Template do link que será mostrado no front-end.
-- $class => Classe do Bootstrap para personalizar os links. (success, primary, danger, warning, default)
+- $class => Classe do Bootstrap para personalizar os links.
 
 ---
 
@@ -122,7 +122,7 @@ Adiciona uma ação de edição para ser exibida na tabela.
 - $label => Texto que aparece no link.
 - $route => Nome da rota que será redirecionado ao clicar no link.
 - $template => Template do link que será mostrado no front-end.
-- $class => Classe do Bootstrap para personalizar os links. (success, primary, danger, warning, default)
+- $class => Classe do Bootstrap para personalizar os links. 
 
 ---
 
@@ -132,7 +132,7 @@ Adiciona uma ação de exclusão para ser exibida na tabela.
 - $label => Texto que aparece no link.
 - $route => Nome da rota que será redirecionado ao clicar no link.
 - $template => Template do link que será mostrado no front-end.
-- $class => Classe do Bootstrap para personalizar os links. (success, primary, danger, warning, default)
+- $class => Classe do Bootstrap para personalizar os links. 
 
 ---
 
