@@ -57,8 +57,7 @@ Para renderizar a tabela basta chamar o metodo ´render()´ da seguinte forma no
 #### Metódos
 
 ##### `model(Model $model = null)`
-Caso não seja `null` atribui um modelo para ser usado na criação da tabela, pode ser enviado uma instancia do `model`ou apenas o a 
-string equivalente ao nome da classe.
+Recebe um array com os dados que deve ser visualizado na tabela.
 Caso contrário será retornado o model.
 
 ---
