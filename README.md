@@ -54,7 +54,7 @@ Para renderizar a tabela basta chamar o metodo ´render()´ da seguinte forma no
 
 `{!! $table->render() !!}`
 
-#### Metódos
+### Metódos
 
 ##### `model(Model $model = null)`
 Recebe um array com os dados que deve ser visualizado na tabela.
